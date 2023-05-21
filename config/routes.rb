@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  home/index
-  namespace :home do (ingresa solo a las rutas indicadas de forma interna)
+  get 'pages/index'
+  get 'pages/about'
     get 'home/index'
     get 'projects/index'
     get 'contact/index'
